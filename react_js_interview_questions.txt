@@ -1,0 +1,42 @@
+React.js Interview Questions for Beginners
+=========================================
+
+1. What is React?
+   React is a JavaScript library for building user interfaces. It helps developers
+   create reusable UI parts called components.
+
+2. What is a React component?
+   A component is a reusable piece of a user interface. Components can be written
+   as JavaScript functions that return JSX.
+
+3. What is JSX?
+   JSX is a syntax extension that lets you write HTML-like markup in JavaScript.
+   React uses it to describe what should appear on the screen.
+
+4. What is the difference between props and state?
+   Props are values passed from a parent component to a child component. State is
+   data managed inside a component that can change over time.
+
+5. What is the purpose of the useState Hook?
+   useState lets a function component store and update state. It returns the
+   current state value and a function for updating it.
+
+6. What is the purpose of the useEffect Hook?
+   useEffect lets a function component run side effects, such as fetching data or
+   updating a browser feature. It can also run cleanup code when needed.
+
+7. How do you handle an event in React?
+   Add an event handler prop such as onClick to a JSX element and pass it a
+   function. React event prop names use camelCase.
+
+8. What is conditional rendering?
+   Conditional rendering means showing different UI depending on a condition.
+   You can use JavaScript expressions such as a ternary operator or && in JSX.
+
+9. Why does React need keys when rendering a list?
+   Keys help React identify each item between renders, so it can update the list
+   efficiently. Use a stable, unique value for each item's key.
+
+10. What is the Virtual DOM?
+    The Virtual DOM is a lightweight representation of the UI that React uses to
+    determine what changed and update the browser DOM accordingly.
