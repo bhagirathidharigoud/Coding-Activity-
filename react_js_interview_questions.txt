@@ -40,3 +40,45 @@ React.js Interview Questions for Beginners
 10. What is the Virtual DOM?
     The Virtual DOM is a lightweight representation of the UI that React uses to
     determine what changed and update the browser DOM accordingly.
+
+11. What is a controlled component in React?
+    A controlled component is an input whose value is controlled by React state.
+    The component updates the state on each change, and the value is rendered from
+    state.
+
+12. What is the difference between state and props in simple terms?
+    Props are data passed down from a parent component, while state is local data
+    stored and managed within a component.
+
+13. What is lifting state up in React?
+    Lifting state up means moving shared state to a common parent component so
+    multiple child components can access and update the same data.
+
+14. What is the purpose of the useRef Hook?
+    useRef lets you keep a value that persists across renders without causing a
+    re-render when it changes. It is often used for DOM references or timers.
+
+15. What is the difference between useState and useReducer?
+    useState is best for simple state values, while useReducer is useful for more
+    complex state transitions and logic spread across multiple actions.
+
+16. How do you fetch data in a React component?
+    You can fetch data in a useEffect Hook after the component mounts. The fetched
+    data is often stored in state and displayed when it is ready.
+
+17. What is a fragment in React?
+    A fragment lets you group multiple elements without adding an extra DOM node.
+    You can use <>...</> or React.Fragment.
+
+18. Why should you avoid directly mutating state in React?
+    Direct mutation can prevent React from detecting updates properly, which can
+    cause stale UI and bugs. Always create new objects or arrays when updating state.
+
+19. What is the purpose of the key prop in a list?
+    A key helps React identify which items changed, added, or removed in a list,
+    making updates more efficient and predictable.
+
+20. What is the difference between client-side rendering and server-side rendering?
+    Client-side rendering builds the UI in the browser after JavaScript loads,
+    while server-side rendering generates the HTML on the server before sending it to
+    the client.
