@@ -1,0 +1,43 @@
+Fundamental DBMS Questions
+=========================
+
+1. What is a DBMS?
+   A Database Management System (DBMS) is software used to create, store, organize,
+   retrieve, and manage data in a database.
+
+2. What is a database?
+   A database is an organized collection of related data that can be accessed and
+   managed electronically.
+
+3. What is the difference between data and information?
+   Data is a collection of raw facts. Information is data that has been processed
+   or organized to make it meaningful.
+
+4. What is a table in a relational database?
+   A table stores related data in rows and columns. Each row represents a record,
+   and each column represents an attribute of that record.
+
+5. What is a primary key?
+   A primary key is a column, or set of columns, that uniquely identifies each row
+   in a table. Its values must be unique and cannot be NULL.
+
+6. What is a foreign key?
+   A foreign key is a column, or set of columns, that refers to a key in another
+   table. It helps establish and maintain relationships between tables.
+
+7. What is SQL?
+   SQL (Structured Query Language) is a language used to define, query, and manage
+   data in relational database systems.
+
+8. What is a database schema?
+   A database schema describes the structure of a database, including its tables,
+   columns, data types, relationships, and constraints.
+
+9. What is normalization?
+   Normalization is the process of organizing data into related tables to reduce
+   unnecessary duplication and help maintain data consistency.
+
+10. What is a transaction in a DBMS?
+    A transaction is a group of database operations treated as one unit. It either
+    completes successfully as a whole or is rolled back so partial changes are not
+    left behind.
