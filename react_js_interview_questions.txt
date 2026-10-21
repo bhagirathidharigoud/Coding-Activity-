@@ -82,3 +82,45 @@ React.js Interview Questions for Beginners
     Client-side rendering builds the UI in the browser after JavaScript loads,
     while server-side rendering generates the HTML on the server before sending it to
     the client.
+
+21. What are the rules of Hooks in React?
+    Call Hooks only at the top level of a function component or custom Hook, and
+    do not call them inside loops, conditions, or nested functions.
+
+22. What is the purpose of the dependency array in useEffect?
+    The dependency array tells React when to run an effect again. React compares
+    its values with the previous render and reruns the effect when a value changes.
+
+23. What are children props in React?
+    The children prop contains the content placed between a component's opening
+    and closing tags. A component can render this content using {children}.
+
+24. What is a custom Hook?
+    A custom Hook is a JavaScript function whose name starts with "use" and that
+    can call other Hooks. It lets you reuse stateful logic between components.
+
+25. What is the Context API used for?
+    Context lets components share values, such as a theme or current user, without
+    passing props through every level of the component tree.
+
+26. What is the difference between React.memo and useMemo?
+    React.memo can skip re-rendering a component when its props have not changed.
+    useMemo caches the result of a calculation between renders when dependencies
+    stay the same.
+
+27. What is the purpose of useCallback?
+    useCallback returns a memoized function and keeps the same function reference
+    between renders until one of its dependencies changes.
+
+28. How do you handle forms in React?
+    You can handle a form by reading input values from component state or by using
+    refs. Add an onSubmit handler and prevent the browser's default form submission
+    when handling it in React.
+
+29. What is reconciliation in React?
+    Reconciliation is the process React uses to compare the previous UI
+    representation with the new one and determine the updates needed in the DOM.
+
+30. What is a portal in React?
+    A portal lets you render a component's content into a DOM node outside its
+    parent component's DOM hierarchy, while keeping it in the same React tree.
