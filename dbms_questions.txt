@@ -41,3 +41,52 @@ Fundamental DBMS Questions
     A transaction is a group of database operations treated as one unit. It either
     completes successfully as a whole or is rolled back so partial changes are not
     left behind.
+
+11. What do the ACID properties of a transaction mean?
+    ACID stands for Atomicity, Consistency, Isolation, and Durability. Together,
+    these properties help ensure transactions are completed reliably and preserve
+    valid database state.
+
+12. What is an index in a database?
+    An index is a data structure that helps the database find rows more quickly
+    without scanning an entire table. Indexes can speed up reads, but require
+    storage and can add work to inserts, updates, and deletes.
+
+13. What is the difference between a clustered and a nonclustered index?
+    A clustered index determines how a table's rows are organized by the indexed
+    key, where supported. A nonclustered index stores a separate lookup structure
+    that points to the corresponding rows; exact behavior depends on the DBMS.
+
+14. What is a database view?
+    A view is a named query that presents data from one or more tables as a
+    virtual table. A regular view generally stores the query definition rather than
+    a separate copy of its results.
+
+15. What is the difference between INNER JOIN and LEFT JOIN?
+    INNER JOIN returns rows with matching values in both tables. LEFT JOIN returns
+    every row from the left table and matching rows from the right; unmatched
+    right-side columns are returned as NULL.
+
+16. What is a database constraint?
+    A constraint is a rule enforced by the database to keep data valid. Common
+    examples include NOT NULL, UNIQUE, CHECK, PRIMARY KEY, and FOREIGN KEY.
+
+17. What is the difference between DELETE, TRUNCATE, and DROP?
+    DELETE removes selected rows and can use a WHERE clause. TRUNCATE removes all
+    rows while retaining the table, subject to DBMS-specific behavior. DROP removes
+    the table definition and its data.
+
+18. What is a deadlock in a database?
+    A deadlock occurs when transactions hold resources that the others need, so
+    none can proceed. A DBMS typically detects a deadlock and aborts one transaction
+    so the others can continue.
+
+19. What is transaction isolation?
+    Transaction isolation controls how concurrent transactions see each other's
+    changes. Isolation levels trade off consistency guarantees against concurrency
+    and can affect issues such as dirty reads and non-repeatable reads.
+
+20. What is a composite key?
+    A composite key is a key made from two or more columns whose combined values
+    uniquely identify a row. It is useful when no single column provides a suitable
+    unique identifier.
