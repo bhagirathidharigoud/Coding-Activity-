@@ -124,3 +124,53 @@ React.js Interview Questions for Beginners
 30. What is a portal in React?
     A portal lets you render a component's content into a DOM node outside its
     parent component's DOM hierarchy, while keeping it in the same React tree.
+
+31. What is automatic batching in React?
+    Automatic batching groups multiple state updates into a single render, reducing
+    unnecessary work. In modern React, this also applies to updates inside promises
+    and timers when using a supported root.
+
+32. What is a stale closure in a React component?
+    A stale closure happens when a callback uses values captured by an earlier
+    render. Use the functional state update form or keep effect dependencies
+    accurate when an update needs the latest value.
+
+33. Why should an effect clean up subscriptions or timers?
+    Cleanup prevents obsolete subscriptions, timers, or event listeners from
+    continuing after an effect is replaced or a component unmounts. Return a cleanup
+    function from the effect to release those resources.
+
+34. What is an error boundary, and what can it catch?
+    An error boundary is a component that displays fallback UI when a descendant
+    throws during rendering. It does not catch errors in event handlers, ordinary
+    asynchronous callbacks, or the boundary itself.
+
+35. What does Suspense do in React?
+    Suspense displays a fallback while a child is not ready, such as while a
+    lazily loaded component is loading. Suspense-enabled data sources can also use
+    it, depending on the framework or library.
+
+36. What is hydration in React?
+    Hydration attaches React's event handling and behavior to HTML that was
+    rendered on the server. The initial client render should match the server HTML
+    to avoid hydration errors.
+
+37. How can changing a component's key reset its state?
+    React uses a component's type and position, including its key, to identify it.
+    Giving it a different key makes React treat it as a new component, resetting
+    its local state and recreating its DOM.
+
+38. What is the purpose of useTransition?
+    useTransition marks state updates as non-urgent so React can keep the interface
+    responsive while working on the update. It returns a pending indicator and a
+    function for starting the transition.
+
+39. How does useDeferredValue help with expensive UI updates?
+    useDeferredValue lets part of the UI use a deferred version of a changing value.
+    React can prioritize urgent updates, such as typing, before rendering the
+    expensive content that depends on the deferred value.
+
+40. What is useId used for, and should it be used for list keys?
+    useId generates stable IDs for accessibility attributes, such as connecting a
+    label to an input. It should not be used for list keys; keys should come from
+    the data being rendered.
