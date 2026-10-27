@@ -90,3 +90,95 @@ Fundamental DBMS Questions
     A composite key is a key made from two or more columns whose combined values
     uniquely identify a row. It is useful when no single column provides a suitable
     unique identifier.
+
+21. What is a candidate key?
+    A candidate key is a column or set of columns that could serve as the primary
+    key because it contains unique values and satisfies key requirements. A table may
+    have several candidate keys, but only one is chosen as the primary key.
+
+22. What is the difference between a unique key and a primary key?
+    A primary key is a special unique key used to identify each row in a table.
+    A unique key also ensures values are unique across rows, but a table may have
+    multiple unique keys while only one primary key is designated.
+
+23. What is concurrency control?
+    Concurrency control is the process of managing simultaneous database operations
+    so that transactions do not interfere incorrectly and data remains consistent.
+
+24. What is a dirty read?
+    A dirty read occurs when one transaction reads data that another transaction has
+    changed but not yet committed. This can expose intermediate or invalid data.
+
+25. What is a non-repeatable read?
+    A non-repeatable read happens when a transaction reads the same row twice and
+    gets different values because another transaction updated it in between.
+
+26. What is a phantom read?
+    A phantom read occurs when a transaction reads a set of rows multiple times and
+    another transaction inserts or deletes rows so the result set changes.
+
+27. What is the difference between OLTP and OLAP?
+    OLTP (Online Transaction Processing) systems handle day-to-day operational
+    transactions with fast, short, and frequent updates. OLAP (Online Analytical
+    Processing) systems are optimized for complex querying and analysis of large
+    historical data sets.
+
+28. What is a data warehouse?
+    A data warehouse is a central repository designed for analytical reporting and
+    decision-making. It stores large volumes of data collected from multiple sources
+    and is usually optimized for read-heavy queries.
+
+29. What is the difference between a database and a data warehouse?
+    A database is designed for managing day-to-day transactional operations and
+    supports frequent writes. A data warehouse is designed for analytical queries and
+    often stores historical data from multiple operational systems.
+
+30. What is a stored procedure?
+    A stored procedure is a reusable database program that contains SQL statements
+    and can be executed as a single unit. It may improve performance and centralize
+    business logic in the database.
+
+31. What is a trigger?
+    A trigger is a database object that automatically executes in response to events
+    such as INSERT, UPDATE, or DELETE on a table. Triggers are often used to enforce
+    rules or maintain audit logs.
+
+32. What is the purpose of a CHECK constraint?
+    A CHECK constraint ensures that values in a column satisfy a specified condition,
+    such as a minimum value, a valid range, or a required format.
+
+33. What is the difference between CHAR and VARCHAR?
+    CHAR stores fixed-length strings and pads shorter values with spaces. VARCHAR
+    stores variable-length strings and uses only the required storage for the value.
+
+34. What is a join in SQL?
+    A join combines rows from two or more tables based on a related column. It is
+    used to retrieve data that is spread across multiple tables.
+
+35. What is the difference between UNION and UNION ALL?
+    UNION combines the results of two queries and removes duplicate rows. UNION ALL
+    combines the results without removing duplicates and is usually faster because it
+    avoids the duplicate-elimination step.
+
+36. What is a subquery?
+    A subquery is a query nested inside another SQL statement. It can be used in
+    SELECT, INSERT, UPDATE, DELETE, or WHERE clauses to provide values or filter rows.
+
+37. What is data redundancy?
+    Data redundancy occurs when the same data is stored in multiple places. It can
+    increase storage use and create inconsistencies unless properly controlled.
+
+38. What is referential integrity?
+    Referential integrity ensures that relationships between tables remain valid.
+    For example, a foreign key value must either match a primary key in the related
+    table or be NULL when allowed.
+
+39. What is the difference between a row and a column?
+    A row is a horizontal record in a table, and a column is a vertical field that
+    defines an attribute for those records.
+
+40. What is the purpose of an ER diagram?
+    An ER (Entity-Relationship) diagram visually represents entities, attributes,
+    and relationships among tables in a database. It helps in designing and
+    understanding database structure.
+
