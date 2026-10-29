@@ -182,3 +182,51 @@ Fundamental DBMS Questions
     and relationships among tables in a database. It helps in designing and
     understanding database structure.
 
+41. What is the difference between DDL and DML?
+    DDL (Data Definition Language) defines or changes database structures, using
+    commands such as CREATE and ALTER. DML (Data Manipulation Language) retrieves
+    or changes the data in those structures, using commands such as SELECT, INSERT,
+    UPDATE, and DELETE.
+
+42. What is the difference between NULL and zero in a database?
+    NULL represents a missing, unknown, or inapplicable value. Zero is a known
+    numeric value, so it should not be used to represent missing data.
+
+43. What is the difference between a database schema and a database instance?
+    A schema is the database's defined structure, such as its tables and constraints.
+    A database instance is the actual data stored in that structure at a particular
+    point in time.
+
+44. What is database partitioning?
+    Database partitioning divides a large table or index into smaller pieces called
+    partitions. The DBMS can manage these pieces separately, which may improve
+    maintenance and query performance for suitable workloads.
+
+45. What is database replication?
+    Database replication copies and maintains data across multiple database servers.
+    It can improve availability and support read scaling, though replicas may not
+    always reflect updates immediately.
+
+46. What is a query execution plan?
+    A query execution plan describes the operations a DBMS intends to use to run a
+    query, such as table scans, index lookups, and joins. Examining the plan can help
+    identify performance bottlenecks.
+
+47. What do COMMIT and ROLLBACK do?
+    COMMIT permanently applies the changes made by a transaction. ROLLBACK cancels
+    uncommitted changes, returning the database to the state before those changes.
+
+48. What is a cascading action on a foreign key?
+    A cascading action specifies how changes to a referenced row affect related rows.
+    For example, ON DELETE CASCADE automatically deletes dependent rows when the
+    referenced row is deleted.
+
+49. What is cardinality in a database relationship?
+    Cardinality describes how many instances of one entity can be associated with
+    instances of another, such as one-to-one, one-to-many, or many-to-many.
+
+50. What is the difference between a relational database and a NoSQL database?
+    A relational database organizes data into tables with a defined schema and
+    relationships. NoSQL databases use other data models, such as documents, key-value
+    pairs, or graphs, and are often chosen for flexible schemas or particular scaling
+    needs.
