@@ -174,3 +174,48 @@ React.js Interview Questions for Beginners
     useId generates stable IDs for accessibility attributes, such as connecting a
     label to an input. It should not be used for list keys; keys should come from
     the data being rendered.
+
+41. What is the difference between the render phase and the commit phase in React?
+    The render phase is when React calculates the next UI tree, while the commit
+    phase is when it applies the DOM updates and effects after the render has been
+    agreed upon.
+
+42. What is the purpose of React.StrictMode in development?
+    StrictMode helps highlight potential problems in a React app, such as unsafe
+    side effects or lifecycle misuse, by intentionally running certain checks and
+    render logic twice during development.
+
+43. What is React.lazy, and how does it work with Suspense?
+    React.lazy lets you load a component only when it is needed. Suspense can show
+    a fallback while the code is being downloaded and resolved.
+
+44. When would you use useLayoutEffect instead of useEffect?
+    useLayoutEffect is useful when you need to read layout measurements or apply
+    DOM mutations before the browser paints, so the user does not see a flicker.
+
+45. What is the difference between client-side routing and server-side routing in a React app?
+    Client-side routing updates the URL and renders views without full page reloads,
+    while server-side routing usually triggers a new HTML request from the server.
+
+46. How can you prevent unnecessary re-renders in a React component tree?
+    You can avoid re-renders by memoizing values or components, keeping props stable,
+    splitting large components, and only updating state that actually needs to change.
+
+47. What is the role of a reducer in React state management?
+    A reducer centralizes state updates in a function that receives the current
+    state and an action, then returns the next state. It is often useful for more
+    complex state transitions.
+
+48. What are synthetic events in React?
+    Synthetic events are React's cross-browser wrapper around native DOM events.
+    They provide a consistent event interface while handling browser differences.
+
+49. How do you implement debounced or throttled input handling in React?
+    You can delay the update logic with a timer or a throttling utility, usually in
+    a useEffect or custom Hook, so expensive operations run less frequently while the
+    user types.
+
+50. What is the difference between a shallow copy and a deep copy when updating nested state?
+    A shallow copy creates a new top-level object or array but keeps nested objects
+    referenced, while a deep copy also duplicates nested data. In React, you must
+    update nested state immutably to trigger re-renders correctly.
