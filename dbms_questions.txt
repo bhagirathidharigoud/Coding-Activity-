@@ -230,3 +230,53 @@ Fundamental DBMS Questions
     relationships. NoSQL databases use other data models, such as documents, key-value
     pairs, or graphs, and are often chosen for flexible schemas or particular scaling
     needs.
+
+51. What is a surrogate key?
+    A surrogate key is an artificial identifier, such as an auto-generated number,
+    used to uniquely identify a row. It has no business meaning and is distinct from
+    a natural key derived from real-world data.
+
+52. What is an alternate key?
+    An alternate key is a candidate key that was not selected as the table's primary
+    key. It can still uniquely identify rows and may be enforced with a UNIQUE
+    constraint.
+
+53. What is a weak entity in database design?
+    A weak entity cannot be uniquely identified by its own attributes alone. It
+    depends on a related strong entity and is typically identified using that
+    entity's key together with a partial key of its own.
+
+54. What is the difference between GROUP BY and HAVING in SQL?
+    GROUP BY groups rows that share values so aggregate functions can be calculated
+    for each group. HAVING filters those groups after aggregation, while WHERE filters
+    individual rows before grouping.
+
+55. What is a window function in SQL?
+    A window function calculates a value across a set of related rows while keeping
+    each row in the result. Unlike a grouped aggregate, it does not collapse those
+    rows into one row per group.
+
+56. What is a recursive common table expression (CTE)?
+    A recursive CTE is a named query that refers to its own results, usually through
+    an anchor query and a recursive query. It is useful for traversing hierarchical
+    data such as organizational charts or category trees.
+
+57. What is a materialized view?
+    A materialized view stores the result of a query rather than computing it each
+    time it is accessed. It can speed up repeated reads, but its stored results need
+    to be refreshed to reflect changes in the underlying data.
+
+58. What is write-ahead logging (WAL)?
+    Write-ahead logging records changes in a log before the corresponding data pages
+    are written to storage. This lets a DBMS recover or redo committed changes after
+    a failure.
+
+59. What is a database checkpoint?
+    A checkpoint is a recovery marker at which a DBMS ensures relevant changes have
+    been written to persistent storage. It can reduce the amount of log that must be
+    processed during recovery.
+
+60. What is two-phase locking (2PL)?
+    Two-phase locking is a concurrency-control protocol with a growing phase, when a
+    transaction acquires locks, and a shrinking phase, when it releases locks. It
+    helps ensure serializable schedules, though it can lead to deadlocks.
