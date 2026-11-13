@@ -281,44 +281,55 @@ Fundamental DBMS Questions
     transaction acquires locks, and a shrinking phase, when it releases locks. It
     helps ensure serializable schedules, though it can lead to deadlocks.
 
-61. What is a database administrator (DBA)?
-    A Database Administrator (DBA) is a person responsible for managing, maintaining, 
-    and securing a database. A DBA handles database installation, backup, recovery, user permissions, 
-    and performance.
 
-62. What is data integrity?
+61. What is a bitmap index?
+    A bitmap index uses bitmaps to represent values in a column and is especially
+    efficient for low-cardinality columns, such as gender or status, where many rows
+    share the same values.
 
-    Data integrity refers to the accuracy, consistency, and reliability of data stored in a database. 
-    It ensures that data remains correct and valid throughout its lifecycle.
+62. What is the difference between a view and a table?
+    A table stores actual data physically in the database, while a view is a virtual
+    result based on a query. A view does not store data by itself, but it can present
+    data from one or more tables in a convenient form.
 
-63. What is a database cursor?
-    A cursor is a database object used to retrieve and process query results one row at a time.
-    It is useful when individual row processing is required.
- 
-64. What is a schema in SQL?
-    A schema is a logical container within a database that holds objects such as tables, views, indexes, and procedures.
-     It helps organize database objects.
+63. What is denormalization?
+    Denormalization is the process of intentionally adding redundancy to a database
+    design to improve query performance or simplify data access. It is often used in
+    data warehousing and analytical systems where reads are more important than write
+    efficiency.
 
-65. What is a database backup?
-    A database backup is a copy of database data stored separately. 
-    It is used to restore data in case of accidental deletion, system failure, or data loss.
+64. What is a B-tree index?
+    A B-tree index is a balanced tree structure used by many DBMSs to organize index
+    entries efficiently. It supports quick searching, insertion, and deletion, and is
+    well suited to large datasets.
 
-66. What is database recovery?
-    Database recovery is the process of restoring a database to a correct and consistent state after a failure,
-    crash, or accidental data loss.
+65. What is ETL in database systems?
+    ETL stands for Extract, Transform, and Load. It is the process of collecting data
+    from source systems, transforming it into a consistent format, and loading it into
+    a target database or data warehouse.
 
-67. What is a NULL function in SQL?
-     NULL functions are SQL functions used to handle NULL values in database queries.
-     For example, COALESCE() returns the first non-NULL value from a list of expressions.
+66. What is the difference between DELETE and UPDATE in SQL?
+    DELETE removes rows from a table, while UPDATE changes existing values in one or
+    more rows. DELETE reduces the number of rows, while UPDATE keeps the row count
+    the same but modifies the stored data.
 
-68. What is a self join in SQL?
-     A self join is a join in which a table is joined with itself. 
-     It is used to compare rows within the same table, such as finding employees and their managers.
+67. How does a DBMS ensure data security?
+    A DBMS ensures data security through authentication, authorization, encryption,
+    auditing, and access controls. These measures help restrict who can view, modify,
+    or manage sensitive information.
 
-69. What is a database constraint violation?
-     A constraint violation occurs when an INSERT or UPDATE operation breaks a rule defined on a table.
-     For example, inserting a duplicate value into a UNIQUE column causes a constraint violation.
+68. What is a lock in a database?
+    A lock is a mechanism used to control access to database resources so that
+    concurrent transactions do not interfere with each other. Locks can be exclusive
+    or shared, depending on whether the operation needs to prevent or allow other
+    readers.
 
-70. What is a database catalog?
-      A database catalog is a collection of system information about a database.
-       It stores metadata such as table names, column names, data types, constraints, and user permissions.
+69. What is a database cache?
+    A database cache stores frequently used data or query results in memory to reduce
+    disk I/O and improve performance. It helps speed up repeated read operations,
+    especially for hot data.
+
+70. What is sharding in a database system?
+    Sharding is the process of distributing data across multiple database servers or
+    partitions called shards. It helps scale a database horizontally and can improve
+    performance and storage capacity for very large systems.
