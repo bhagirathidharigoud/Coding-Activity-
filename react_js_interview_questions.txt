@@ -219,3 +219,55 @@ React.js Interview Questions for Beginners
     A shallow copy creates a new top-level object or array but keeps nested objects
     referenced, while a deep copy also duplicates nested data. In React, you must
     update nested state immutably to trigger re-renders correctly.
+
+51. What is a render prop, and when would you use it?
+    A render prop is a function prop that a component calls to provide UI or data
+    to its children. It is useful when you want to share behavior while keeping the
+    rendering logic flexible for the consuming component.
+
+52. What is the purpose of React.forwardRef?
+    React.forwardRef lets a component receive a ref from its parent and pass it to
+    a child DOM element or another component. It is commonly used for exposing DOM
+    access to parent components in reusable UI libraries.
+
+53. How is a callback ref different from a ref object in React?
+    A ref object holds a current value and is assigned by React, while a callback
+    ref is a function that React calls with the DOM node or component instance when
+    it mounts and null when it unmounts. Callback refs are useful for dynamic
+    assignment logic.
+
+54. Why might you use useReducer instead of useState for form state?
+    useReducer is useful when state transitions become complex or many actions need
+    to update the same state object. It keeps the logic centralized in a reducer,
+    which can make validation, resets, and multi-step form behavior easier to manage.
+
+55. What is a stale value problem, and how can you avoid it in React?
+    A stale value problem occurs when a callback captures outdated state or props
+    from an earlier render. Using functional state updates, effect dependencies, or
+    refs helps ensure the latest values are used.
+
+56. How do you prevent a child component from re-rendering when its parent updates?
+    You can memoize the child with React.memo, keep its props stable, and avoid
+    creating new object or array references unnecessarily. This helps prevent
+    unnecessary renders when the parent re-renders for unrelated reasons.
+
+57. What is the purpose of lazy loading in React, and how is it typically used?
+    Lazy loading delays loading code until a feature is needed, reducing the
+    initial bundle size. In React, it is commonly done with React.lazy together
+    with Suspense to load a component on demand.
+
+58. How can you handle race conditions when fetching data in React?
+    You can ignore outdated responses, cancel requests when a component unmounts,
+    or keep track of request IDs before updating state. This prevents stale or out
+    of order data from overwriting the current UI.
+
+59. What is list virtualization, and when is it useful?
+    List virtualization renders only the items currently visible in the viewport,
+    which reduces DOM size and improves performance for very large lists. It is
+    especially useful for long tables, feeds, and catalog screens.
+
+60. How does React help with accessibility in forms and inputs?
+    React supports accessible form patterns by allowing labels, aria attributes,
+    focus management, and keyboard-friendly interactions. Developers can also use
+    hooks like useId to connect labels to inputs and improve screen reader support.
+
