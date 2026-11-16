@@ -1,0 +1,52 @@
+API Interview Questions for Beginners
+====================================
+
+1. What is an API?
+   An API (Application Programming Interface) is a set of rules and protocols that
+   allows one software application to communicate with another. It defines how
+   requests and responses should work, making it easier for systems to exchange data.
+   Example: a frontend application calling a backend server to get user data.
+
+2. What is REST API?
+   A REST API is an API that follows REST (Representational State Transfer)
+   principles. It uses HTTP methods like GET, POST, PUT, and DELETE to perform
+   operations on resources. REST APIs are stateless, meaning each request contains all
+   the information needed to process it.
+
+3. What is the difference between GET and POST?
+   GET is used to fetch data from the server. It is usually safe and read-only.
+   POST is used to send data to the server to create or update resources. It is used
+   for actions such as submitting a form or creating a new user.
+
+   Example:
+   - GET /users -> Get all users
+   - POST /users -> Create a new user
+
+4. What is JSON and why is it commonly used in APIs?
+   JSON (JavaScript Object Notation) is a lightweight data format used to send and
+   receive data between systems. It is easy to read for humans and easy to parse for
+   machines. Most APIs use JSON because it works well with JavaScript and many other
+   programming languages.
+
+   Example:
+   {
+     "id": 1,
+     "name": "John",
+     "email": "john@example.com"
+   }
+
+5. What are HTTP status codes and why are they important?
+   HTTP status codes tell the client whether a request was successful or failed.
+   They help developers understand the result of an API request.
+
+   Common examples:
+   - 200 OK: request succeeded
+   - 201 Created: resource created successfully
+   - 400 Bad Request: request is invalid
+   - 401 Unauthorized: user is not authenticated
+   - 403 Forbidden: user is authenticated but not allowed
+   - 404 Not Found: resource does not exist
+   - 500 Internal Server Error: server problem
+
+These five topics are among the most important beginner-level API concepts because
+they form the foundation of how APIs work in real-world applications.
