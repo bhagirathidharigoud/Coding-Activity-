@@ -50,3 +50,45 @@ API Interview Questions for Beginners
 
 These five topics are among the most important beginner-level API concepts because
 they form the foundation of how APIs work in real-world applications.
+
+6. What is an API endpoint?
+   An API endpoint is a specific URL where an API receives requests for a resource.
+   It combines a base URL, a path, and sometimes query parameters.
+
+   Example:
+   - https://api.example.com/users
+   - https://api.example.com/users/123
+
+7. What is the difference between authentication and authorization?
+   Authentication verifies who a user is, while authorization verifies what the
+   authenticated user is allowed to do.
+
+   Example: a user logs in with a valid password for authentication, and the system
+   then checks whether that user has permission to delete a record for authorization.
+
+8. What is a REST API resource?
+   A resource is an object or concept exposed by an API, such as a user, product,
+   order, or comment. Resources are identified by URLs and manipulated using HTTP
+   methods.
+
+   Example:
+   - /users represents a collection of users
+   - /users/12 represents the user with ID 12
+
+9. What are API query parameters and path parameters?
+   Query parameters are optional key-value pairs added after a question mark to filter,
+   sort, or control a response. Path parameters identify a specific resource within a
+   URL path.
+
+   Example:
+   - /users?role=admin -> query parameter
+   - /users/12 -> 12 is a path parameter
+
+10. What is API rate limiting?
+   API rate limiting restricts the number of requests a client can send within a
+   specific time period. It helps prevent abuse, manage server load, and keep an API
+   available for all users.
+
+   APIs commonly communicate limits through response headers such as limit, remaining,
+   and reset time information. When the limit is exceeded, the server may return a
+   429 Too Many Requests response.
